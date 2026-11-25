@@ -1,0 +1,63 @@
+/* ESTILO DAS PÁGINAS INDIVIDUAIS */
+
+.animal-destaque {
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 8%;
+    background:
+        linear-gradient(135deg, #0a303a, #12566a);
+}
+
+.animal-texto h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    margin: 15px 0;
+}
+
+animal-texto h2 {
+    font-size: clamp(25px, 3vw, 36px);
+    margin: 15px 0;
+    line-height: 1.8;
+    color: #d2e5e6;
+}
+
+.animal-destaque img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* CONTEÚDO */
+
+.informacoes {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 30px;
+}
+
+.informacoes h2 {
+    color: #8bc8d3;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.informacoes p {
+    line-height: 1.9;
+    color: #d5e0df;
+}
+
+/* AJUSTE PARA CELULARES */
+
+@media (max-width: 700px) {
+    .animal-destaque {
+        grid-template-columns: 1fr;
+        padding: 45px 7%;
+    }
+
+    .animal-destaque img {
+        max-height: 300px;
+    }
+}

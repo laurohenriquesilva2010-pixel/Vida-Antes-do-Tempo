@@ -1,0 +1,357 @@
+/* CONFIGURAÇÕES GERAIS */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #102b2e;
+    color: #f1eee4;
+    overflow-x: hidden;
+}
+
+/* MENU */
+
+header {
+    background-color: #0b2023;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+}
+
+.menu h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.menu div {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #e6eee7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #91c8a5;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.therizinosaurus {
+    padding: 60px 7%;
+}
+
+.hero-therizinosaurus {
+    margin-bottom: 45px;
+}
+
+.hero-therizinosaurus span {
+    color: #d4b477;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.hero-therizinosaurus h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    margin: 15px 0;
+    color: #f1eee4;
+}
+
+.hero-therizinosaurus p {
+    max-width: 750px;
+    color: #d2ddd6;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* CARTÕES DE CONTEÚDO */
+
+.secao-therizinosaurus {
+    background-color: #17383b;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.secao-therizinosaurus .numero {
+    color: #d4b477;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.secao-therizinosaurus h2 {
+    font-size: clamp(25px, 3vw, 36px);
+    margin: 15px 0;
+}
+
+.secao-therizinosaurus p {
+    color: #d2ddd6;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* IMAGEM PRINCIPAL */
+
+.imagem-therizinosaurus {
+    max-width: 850px;
+    margin: 25px auto 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #102b2e;
+}
+
+.imagem-hallucigenia img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+    cursor: zoom-in;
+}
+
+.imagem-hallucigenia:hover img {
+    transform: scale(1.12);
+}
+
+.imagem-hallucigenia figcaption {
+    padding: 12px;
+    color: #c9d8d0;
+    font-size: 14px;
+}
+
+/* COMPARAÇÃO DE TAMANHO */
+
+.comparacao-hallucigenia {
+    max-width: 650px;
+    margin: 25px auto 0;
+    background-color: #102b2e;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.comparacao-therizinosaurus img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+    .menu {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .menu div {
+        gap: 15px;
+    }
+
+    .therizinosaurus {
+        padding: 35px 5%;
+    }
+
+    .secao-therizinosaurus {
+        padding: 22px;
+    }
+
+    .hero-therizinosaurus p {
+        font-size: 16px;
+    }
+}
+
+/* IMAGENS DAS PÁGINAS INDIVIDUAIS */
+
+.imagem-inicio img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* IMAGEM DE COMPARAÇÃO */
+
+#conhecendo ~ .introducao .imagem-inicio img {
+    max-width: 650px;
+}
+
+/* AJUSTES PARA O HTML ATUAL DO THERIZINOSAURUS */
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    padding: 60px 7%;
+}
+
+/* APRESENTAÇÃO */
+.inicio {
+    margin-bottom: 45px;
+}
+
+.texto-inicio .subtitulo {
+    color: #d4b477;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.texto-inicio h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    margin: 15px 0;
+    color: #f1eee4;
+}
+
+.texto-inicio > p {
+    max-width: 750px;
+    color: #d2ddd6;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* IMAGEM PRINCIPAL */
+.imagem-inicio {
+    max-width: 850px;
+    margin: 25px auto 0;
+}
+
+.imagem-inicio img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+.animal-intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.animal-imagem {
+    width: 40%;
+}
+
+.animal-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.animal-texto {
+    width: 60%;
+    text-align: left;
+}
+}
+
+/* CARTÕES DE INFORMAÇÃO */
+.introducao {
+    background-color: #17383b;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.introducao .subtitulo {
+    color: #d4b477;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.introducao h2 {
+    font-size: clamp(25px, 3vw, 36px);
+    margin: 15px 0;
+}
+
+.introducao p {
+    color: #d2ddd6;
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+/* BOTÃO VOLTAR */
+.voltar-galeria {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 700px) {
+    main {
+        padding: 35px 5%;
+    }
+
+    .introducao {
+        padding: 22px;
+    }
+
+    .texto-inicio > p {
+        font-size: 16px;
+    }
+
+    .introducao p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 700px) {
+    .animal-intro {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .animal-imagem,
+    .animal-texto {
+        width: 100%;
+    }
+}
+
+/* BOTÃO VOLTAR PARA A GALERIA */
+
+.area-voltar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 7%;
+}
+
+.voltar-galeria {
+    display: inline-block;
+    padding: 12px 22px;
+
+    background-color: #0b2023;
+    color: #f1eee4;
+
+    border: 1px solid #91c8a5;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.voltar-galeria:hover {
+    background-color: #91c8a5;
+    color: #102b2e;
+    transform: translateY(-3px);
+}
